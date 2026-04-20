@@ -38,7 +38,7 @@ class View(ft.UserControl):
         self.btnPrintCorsiPD = ft.ElevatedButton(text="Stampa Corsi",
                                                 on_click= self.controller.handlePrintCorsiPD)
 
-        self.btnPrintIscrittiCorsiPD = ft.ElevatedButton(text="Stampa Corsi",
+        self.btnPrintIscrittiCorsiPD = ft.ElevatedButton(text="Stampa Iscritti Corsi",
                                                 on_click= self.controller.handlePrintIscrittiCorsiPD)
 
         row1= ft.Row([self.doPD,self.btnPrintCorsiPD , self.btnPrintIscrittiCorsiPD])
@@ -55,7 +55,7 @@ class View(ft.UserControl):
         self.btnPrintCDSCodins = ft.ElevatedButton(text="Stampa CDS afferenti",
                                                          on_click=self.controller.handlePrintCDSCodins)
 
-        row2 = ft.Row([self.doPD,self.btnPrintIscrittiCodins,self.btnPrintCDSCodins])
+        row2 = ft.Row([self.doCodins,self.btnPrintIscrittiCodins,self.btnPrintCDSCodins])
         self._page.add(row1,row2)
 
         # List View where the reply is printed
